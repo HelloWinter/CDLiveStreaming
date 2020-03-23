@@ -9,14 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     //MARK: - Getters and Setters
     lazy var session: LFLiveSession = {
-        let audioConfiguration = LFLiveAudioConfiguration.defaultConfiguration()
-        let videoConfiguration = LFLiveVideoConfiguration.defaultConfigurationForQuality(LFLiveVideoQuality.Low3, landscape: false)
-        let session = LFLiveSession(audioConfiguration: audioConfiguration, videoConfiguration: videoConfiguration)
+        let audioConfiguration = LFLiveAudioConfiguration.default()
         
-        session?.delegate = self
+        let videoConfiguration = LFLiveVideoConfiguration.defaultConfiguration(for: LFLiveVideoQuality.low3)
+        let session = LFLiveSession(audioConfiguration: audioConfiguration, videoConfiguration: videoConfiguration)
+        session?.delegate = self as LFLiveSessionDelegate
         session?.preView = self.view
         return session!
     }()
@@ -32,22 +31,25 @@ class ViewController: UIViewController {
         session.stopLive()
     }
     
-    //MARK: - Callback
-    func liveSession(session: LFLiveSession?, debugInfo: LFLiveDebug?){
-        
-    }
-    func liveSession(session: LFLiveSession?, errorCode: LFLiveSocketErrorCode){
-        
-    }
-    func liveSession(session: LFLiveSession?, liveStateDidChange state: LFLiveState){
-        
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 
+}
 
+extension ViewController : LFLiveSessionDelegate{
+    //MARK: - Callback
+    func liveSession(_ session: LFLiveSession?, debugInfo: LFLiveDebug?){
+        
+    }
+    func liveSession(_ session: LFLiveSession?, errorCode: LFLiveSocketErrorCode){
+        
+    }
+    func liveSession(_ session: LFLiveSession?, liveStateDidChange state: LFLiveState){
+        
+    }
 }
 
