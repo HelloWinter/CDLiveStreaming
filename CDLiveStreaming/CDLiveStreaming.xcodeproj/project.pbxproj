@@ -13,6 +13,12 @@
 		A67E769F2424F23D00D48E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67E769D2424F23D00D48E1E /* Main.storyboard */; };
 		A67E76A12424F23E00D48E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67E76A02424F23E00D48E1E /* Assets.xcassets */; };
 		A67E76A42424F23E00D48E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67E76A22424F23E00D48E1E /* LaunchScreen.storyboard */; };
+		FFFD622F244851510013DA8C /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFD622E244851510013DA8C /* IJKMediaFramework.framework */; };
+		FFFD6231244851B10013DA8C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFD6230244851B10013DA8C /* libz.tbd */; };
+		FFFD6233244851BE0013DA8C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFD6232244851BE0013DA8C /* libc++.tbd */; };
+		FFFD6239244854300013DA8C /* login_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FFFD62372448542F0013DA8C /* login_video.mp4 */; };
+		FFFD623A244854300013DA8C /* loginmovie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FFFD6238244854300013DA8C /* loginmovie.mp4 */; };
+		FFFD623D244855B80013DA8C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFD623C244855B80013DA8C /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		A67E76A32424F23E00D48E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A67E76A52424F23E00D48E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E72791F0CCE2087AB35BDE46 /* Pods-CDLiveStreaming.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDLiveStreaming.release.xcconfig"; path = "Target Support Files/Pods-CDLiveStreaming/Pods-CDLiveStreaming.release.xcconfig"; sourceTree = "<group>"; };
+		FFFD622E244851510013DA8C /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		FFFD6230244851B10013DA8C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FFFD6232244851BE0013DA8C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FFFD62372448542F0013DA8C /* login_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = login_video.mp4; sourceTree = "<group>"; };
+		FFFD6238244854300013DA8C /* loginmovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginmovie.mp4; sourceTree = "<group>"; };
+		FFFD623C244855B80013DA8C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +46,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFD6233244851BE0013DA8C /* libc++.tbd in Frameworks */,
+				FFFD6231244851B10013DA8C /* libz.tbd in Frameworks */,
 				80F272FF50B71423B24894E6 /* Pods_CDLiveStreaming.framework in Frameworks */,
+				FFFD622F244851510013DA8C /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,8 @@
 		3EF54EC91FFCAA469953FADA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FFFD6232244851BE0013DA8C /* libc++.tbd */,
+				FFFD6230244851B10013DA8C /* libz.tbd */,
 				5F580B851D2C17F03AE076E6 /* Pods_CDLiveStreaming.framework */,
 			);
 			name = Frameworks;
@@ -81,6 +98,10 @@
 			children = (
 				A67E76992424F23D00D48E1E /* AppDelegate.swift */,
 				A67E769B2424F23D00D48E1E /* ViewController.swift */,
+				FFFD6236244854070013DA8C /* Generic */,
+				FFFD6235244853590013DA8C /* Resources */,
+				FFFD62342448530B0013DA8C /* Classes */,
+				FFFD622D2448511E0013DA8C /* Lib */,
 				A67E769D2424F23D00D48E1E /* Main.storyboard */,
 				A67E76A02424F23E00D48E1E /* Assets.xcassets */,
 				A67E76A22424F23E00D48E1E /* LaunchScreen.storyboard */,
@@ -88,6 +109,46 @@
 				A6069F5B2428E995009C015D /* CDLiveStreaming-Bridging-Header.h */,
 			);
 			path = CDLiveStreaming;
+			sourceTree = "<group>";
+		};
+		FFFD622D2448511E0013DA8C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				FFFD622E244851510013DA8C /* IJKMediaFramework.framework */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		FFFD62342448530B0013DA8C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FFFD623B244854500013DA8C /* Login */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FFFD6235244853590013DA8C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFFD62372448542F0013DA8C /* login_video.mp4 */,
+				FFFD6238244854300013DA8C /* loginmovie.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFFD6236244854070013DA8C /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		FFFD623B244854500013DA8C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FFFD623C244855B80013DA8C /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A67E76A42424F23E00D48E1E /* LaunchScreen.storyboard in Resources */,
+				FFFD623A244854300013DA8C /* loginmovie.mp4 in Resources */,
+				FFFD6239244854300013DA8C /* login_video.mp4 in Resources */,
 				A67E76A12424F23E00D48E1E /* Assets.xcassets in Resources */,
 				A67E769F2424F23D00D48E1E /* Main.storyboard in Resources */,
 			);
@@ -206,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFD623D244855B80013DA8C /* LoginViewController.swift in Sources */,
 				A67E769C2424F23D00D48E1E /* ViewController.swift in Sources */,
 				A67E769A2424F23D00D48E1E /* AppDelegate.swift in Sources */,
 			);
@@ -356,6 +420,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GUAFTD7UP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CDLiveStreaming/Lib",
+				);
 				INFOPLIST_FILE = CDLiveStreaming/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -378,6 +447,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GUAFTD7UP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CDLiveStreaming/Lib",
+				);
 				INFOPLIST_FILE = CDLiveStreaming/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

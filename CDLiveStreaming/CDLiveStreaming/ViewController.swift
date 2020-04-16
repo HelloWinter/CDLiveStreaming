@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         
         let videoConfiguration = LFLiveVideoConfiguration.defaultConfiguration(for: LFLiveVideoQuality.low3)
         let session = LFLiveSession(audioConfiguration: audioConfiguration, videoConfiguration: videoConfiguration)
-        session?.delegate = self as LFLiveSessionDelegate
+        session?.delegate = self as! LFLiveSessionDelegate
         session?.preView = self.view
         return session!
     }()
