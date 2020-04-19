@@ -13,6 +13,9 @@
 		A67E769F2424F23D00D48E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67E769D2424F23D00D48E1E /* Main.storyboard */; };
 		A67E76A12424F23E00D48E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67E76A02424F23E00D48E1E /* Assets.xcassets */; };
 		A67E76A42424F23E00D48E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67E76A22424F23E00D48E1E /* LaunchScreen.storyboard */; };
+		FF51CEFB244AF700009DF4D4 /* ThirdLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51CEFA244AF700009DF4D4 /* ThirdLoginView.swift */; };
+		FF51CEFD244AF9E3009DF4D4 /* ThirdLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF51CEFC244AF9E3009DF4D4 /* ThirdLoginView.xib */; };
+		FF9FF944244BEF8D00F2421C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FF943244BEF8D00F2421C /* UIViewExtension.swift */; };
 		FFFD622F244851510013DA8C /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFD622E244851510013DA8C /* IJKMediaFramework.framework */; };
 		FFFD6231244851B10013DA8C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFD6230244851B10013DA8C /* libz.tbd */; };
 		FFFD6233244851BE0013DA8C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFD6232244851BE0013DA8C /* libc++.tbd */; };
@@ -33,6 +36,9 @@
 		A67E76A32424F23E00D48E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A67E76A52424F23E00D48E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E72791F0CCE2087AB35BDE46 /* Pods-CDLiveStreaming.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDLiveStreaming.release.xcconfig"; path = "Target Support Files/Pods-CDLiveStreaming/Pods-CDLiveStreaming.release.xcconfig"; sourceTree = "<group>"; };
+		FF51CEFA244AF700009DF4D4 /* ThirdLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLoginView.swift; sourceTree = "<group>"; };
+		FF51CEFC244AF9E3009DF4D4 /* ThirdLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdLoginView.xib; sourceTree = "<group>"; };
+		FF9FF943244BEF8D00F2421C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		FFFD622E244851510013DA8C /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		FFFD6230244851B10013DA8C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FFFD6232244851BE0013DA8C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -111,6 +117,23 @@
 			path = CDLiveStreaming;
 			sourceTree = "<group>";
 		};
+		FF51CEF8244AF6B6009DF4D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFFD623C244855B80013DA8C /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF51CEF9244AF6C9009DF4D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF51CEFA244AF700009DF4D4 /* ThirdLoginView.swift */,
+				FF51CEFC244AF9E3009DF4D4 /* ThirdLoginView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FFFD622D2448511E0013DA8C /* Lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +162,7 @@
 		FFFD6236244854070013DA8C /* Generic */ = {
 			isa = PBXGroup;
 			children = (
+				FF9FF943244BEF8D00F2421C /* UIViewExtension.swift */,
 			);
 			path = Generic;
 			sourceTree = "<group>";
@@ -146,7 +170,8 @@
 		FFFD623B244854500013DA8C /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				FFFD623C244855B80013DA8C /* LoginViewController.swift */,
+				FF51CEF9244AF6C9009DF4D4 /* View */,
+				FF51CEF8244AF6B6009DF4D4 /* Controller */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -212,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF51CEFD244AF9E3009DF4D4 /* ThirdLoginView.xib in Resources */,
 				A67E76A42424F23E00D48E1E /* LaunchScreen.storyboard in Resources */,
 				FFFD623A244854300013DA8C /* loginmovie.mp4 in Resources */,
 				FFFD6239244854300013DA8C /* login_video.mp4 in Resources */,
@@ -269,8 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9FF944244BEF8D00F2421C /* UIViewExtension.swift in Sources */,
 				FFFD623D244855B80013DA8C /* LoginViewController.swift in Sources */,
 				A67E769C2424F23D00D48E1E /* ViewController.swift in Sources */,
+				FF51CEFB244AF700009DF4D4 /* ThirdLoginView.swift in Sources */,
 				A67E769A2424F23D00D48E1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

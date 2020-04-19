@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ThirdLoginView" customModule="CDLiveStreaming" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slD-uk-PnE">
+                    <rect key="frame" x="157.5" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="smY-1K-zjI"/>
+                        <constraint firstAttribute="height" constant="60" id="uor-iy-SU1"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="qqloginicon_60x60"/>
+                    <connections>
+                        <action selector="loginClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="KP7-n4-hlu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IB6-yp-AfO">
+                    <rect key="frame" x="237.5" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="01a-PE-jx5"/>
+                        <constraint firstAttribute="height" constant="60" id="c7A-s6-ZNx"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="wbLoginicon_60x60"/>
+                    <connections>
+                        <action selector="loginClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="skj-wa-TXz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoT-ZJ-QA9">
+                    <rect key="frame" x="77.5" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Vkc-Gn-M61"/>
+                        <constraint firstAttribute="height" constant="60" id="iDL-a0-9x4"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="wxloginicon_60x60"/>
+                    <connections>
+                        <action selector="loginClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="iQT-la-l5K"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="slD-uk-PnE" firstAttribute="leading" secondItem="QoT-ZJ-QA9" secondAttribute="trailing" constant="20" id="A9V-HM-G98"/>
+                <constraint firstItem="QoT-ZJ-QA9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FfE-OH-tvi"/>
+                <constraint firstItem="slD-uk-PnE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Sw2-dT-bnW"/>
+                <constraint firstItem="IB6-yp-AfO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aX6-oh-09t"/>
+                <constraint firstItem="IB6-yp-AfO" firstAttribute="leading" secondItem="slD-uk-PnE" secondAttribute="trailing" constant="20" id="dLi-JW-WcN"/>
+                <constraint firstItem="slD-uk-PnE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iTb-bE-11A"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="141.22938530734635"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qqloginicon_60x60" width="60" height="60"/>
+        <image name="wbLoginicon_60x60" width="60" height="60"/>
+        <image name="wxloginicon_60x60" width="60" height="60"/>
+    </resources>
+</document>
